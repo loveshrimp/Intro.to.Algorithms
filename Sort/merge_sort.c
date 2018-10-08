@@ -35,12 +35,12 @@ void merge(int **A, int p, int q, int r)
     {
         if (L[i] <= R[j])
         {
-            *A[k] = L[i];
+            (*A)[k] = L[i];
             ++i;
         }
         else
         {
-            *A[k] = R[j];
+            (*A)[k] = R[j];
             ++j;
         }
     }
